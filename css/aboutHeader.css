@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  grid-template-columns: 25vw 75vw;
+}
+
+.grid {
+  display: grid;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.montserratBold {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.montserratBlack {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+}
+
+.montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.portfolio {
+  font-size: 35px;
+}
+
+.liMenu {
+  font-size: 20px;
+  padding: 10px;
+}
+
+.liMenu .hrMenu {
+  width: 0px;
+  height: 4px;
+  border: none;
+
+  background: #FAFF00;
+  border-radius: 10px;
+  transition: width 1s;
+
+}
+
+.menuAbout .hrMenu {
+  width: 80%;
+  height: 4px;
+  border: none;
+
+  background: #FAFF00;
+  border-radius: 10px;
+  transition: width 1s;
+}
+
+.liMenu:hover .hrMenu {
+  width: 80%;
+}
+
+.titMenu > a{
+  color: #000;
+}
+
+.titMenu #hrPort {
+  width: 80%;
+  height: 4px;
+  border: none;
+
+  background: #fff;
+  border-radius: 10px;
+  transition: width 1s;
+}
+
+.titMenu:hover #hrPort {
+  width: 100%;
+}
+
+.menuBurguer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  cursor: pointer;
+  transition: 9s;
+}
+
+.menuBurguer:hover > .burguer {
+  background: #FAFF00;
+}
+
+.menuBurguer:hover > .minorBurguer {
+  background: #FAFF00;
+}
+
+.burguer {
+  width: 52px;
+  height: 4px;
+  margin: 5px;
+
+  background: #FFFFFF;
+  border-radius: 10px;
+  border: none;
+}
+
+.minorBurguer {
+  width: 39px;
+  height: 4px;
+  margin: 5px;
+
+  background: #FFFFFF;
+  border-radius: 10px;
+  border: none;
+}
+
+header{
+  position: relative;
+  z-index: 2;
+  margin-bottom: -50px;
+}
+
+.yellowVertical {
+  position: relative;
+  z-index: 1;
+  width: 25vw;
+  height: 100vh;
+  background-color: #FAFF00;
+}
+
+.btnHireMe {
+  width: 183px;
+  height: 25px;
+  background: #FAFF00;
+  border: none;
+  border-radius: 5px;
+}
+
+.alignLeft {
+  background-color: #FAFF00;
+  height: 100vh;
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.knowMore {
+  display: flex;
+  align-items: center;
+}
+
+.knowMore > hr {
+  width: 88px;
+  height: 3px;
+  border: none;
+  background: #FFFFFF;
+  border-radius: 5px;
+}
+
+.skillsFooter {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+}
+
+.alignRight {
+  display: grid;
+  grid-template-rows: 20vh 65vh 15vh;
+}

@@ -30,6 +30,10 @@ ul {
   font-weight: 800;
 }
 
+.montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .portfolio {
   font-size: 35px;
 }
@@ -264,8 +268,4 @@ background-position: 450px;
 .leftP {
   margin-left: 20px;
   text-align: justify;
-}
-
-.montserrat {
-  font-family: 'Montserrat', sans-serif;
 }
