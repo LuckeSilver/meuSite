@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  grid-template-columns: 25vw 75vw;
+}
+
+.grid {
+  display: grid;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.montserratBold {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.montserratBlack {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+}
+
+.montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.portfolio {
+  font-size: 35px;
+}
+
+.liMenu {
+  font-size: 20px;
+  padding: 10px;
+}
+
+.liMenu .hrMenu {
+  width: 0px;
+  height: 4px;
+  border: none;
+
+  background: #FAFF00;
+  border-radius: 10px;
+  transition: width 1s;
+
+}
+
+.menuAbout .hrMenu {
+  width: 80%;
+  height: 4px;
+  border: none;
+
+  background: #FAFF00;
+  border-radius: 10px;
+  transition: width 1s;
+}
+
+.liMenu:hover .hrMenu {
+  width: 80%;
+}
+
+.titMenu > a{
+  color: #000;
+}
+
+.titMenu #hrPort {
+  width: 50%;
+  height: 4px;
+  border: none;
+
+  background: #fff;
+  border-radius: 10px;
+  transition: width 1s;
+}
+
+.titMenu:hover #hrPort {
+  width: 65%;
+}
+
+.menuBurguer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  cursor: pointer;
+  transition: 9s;
+}
+
+.menuBurguer:hover > .burguer {
+  background: #FAFF00;
+}
+
+.menuBurguer:hover > .minorBurguer {
+  background: #FAFF00;
+}
+
+.burguer {
+  width: 52px;
+  height: 4px;
+  margin: 5px;
+
+  background: #FFFFFF;
+  border-radius: 10px;
+  border: none;
+}
+
+.minorBurguer {
+  width: 39px;
+  height: 4px;
+  margin: 5px;
+
+  background: #FFFFFF;
+  border-radius: 10px;
+  border: none;
+}
+
+header{
+  position: relative;
+  z-index: 2;
+  margin-bottom: -50px;
+}
+
+.yellowVertical {
+  position: relative;
+  z-index: 1;
+  width: 25vw;
+  height: 100vh;
+  background-color: #FAFF00;
+}
+
+
+.alignLeft {
+  background-color: #FAFF00;
+  height: 100vh;
+}
+
+.alignLeft > img {
+  position: relative;
+  max-width: 91.6vh;
+  z-index: 2;
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin-left: 380px;
+  margin-top: 20px;
+}
+
+.conteudo h1 {
+  font-weight: 800;
+  font-size: 2.2rem;
+}
+
+.conteudo h2 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #FAFF00;
+  margin-left: 5px;
+}
+
+.conteudo p {
+  text-align: justify;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.knowMore {
+  display: flex;
+  align-items: center;
+}
+
+.knowMore > hr {
+  width: 85px;
+  height: 4px;
+  border: none;
+  background: #FFFFFF;
+  border-radius: 5px;
+}
+
+.skills {
+  margin-top: 50px;
+}
+
+.experiences {
+  display: flex;
+  align-items: center;
+}
+
+.experiences .hrXp {
+  width: 74px;
+  height: 4px;
+  border: none;
+  background: #FFFFFF;
+  border-radius: 5px;
+}
+
+.btnHireMe {
+  font-size: 1rem;
+  font-weight: 500;
+  width: 200px;
+  height: 25px;
+  background: #FAFF00;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 1s, color 1s, height .5s;
+}
+
+.btnHireMe:hover {
+  border: 2px solid #FAFF00;
+  background-color: #000;
+  height: 30px;
+  color: #fff;
+}
+
+.alignRight {
+  display: grid;
+  grid-template-rows: 20vh 65vh 15vh;
+}
+
+.skillsFooter {
+  background: rgba(255, 255, 255, 0.9);
+  border-top-right-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.skillsFooter img {
+  width: 50px;
+  height: 50px;
+}
+
+.skillsFooter .imgAlternative {
+  width: 95px;
+  height: 50px;
+}
+
+.skillsFooter .imgAlternativeUi {
+  width: 120px;
+  height: 70px;
+}
+
+.skillsFooter .imgFigma {
+  width: 70px;
+  height: 70px;
+}
+
+.skillsFooter .imgReact {
+  width: 110px;
+  height: 55px;
+}
