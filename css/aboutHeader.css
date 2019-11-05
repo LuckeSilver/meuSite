@@ -78,7 +78,7 @@ ul {
 }
 
 .titMenu #hrPort {
-  width: 80%;
+  width: 50%;
   height: 4px;
   border: none;
 
@@ -88,7 +88,7 @@ ul {
 }
 
 .titMenu:hover #hrPort {
-  width: 100%;
+  width: 65%;
 }
 
 .menuBurguer {
@@ -141,23 +141,43 @@ header{
   background-color: #FAFF00;
 }
 
-.btnHireMe {
-  width: 183px;
-  height: 25px;
-  background: #FAFF00;
-  border: none;
-  border-radius: 5px;
-}
 
 .alignLeft {
   background-color: #FAFF00;
   height: 100vh;
 }
 
+.alignLeft > img {
+  position: relative;
+  max-width: 91.6vh;
+  z-index: 2;
+}
+
 .conteudo {
   display: flex;
   flex-direction: column;
+  max-width: 400px;
+  margin-left: 380px;
+  margin-top: 20px;
+}
 
+.conteudo h1 {
+  font-weight: 800;
+  font-size: 2.2rem;
+}
+
+.conteudo h2 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #FAFF00;
+  margin-left: 5px;
+}
+
+.conteudo p {
+  text-align: justify;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 .knowMore {
@@ -166,19 +186,70 @@ header{
 }
 
 .knowMore > hr {
-  width: 88px;
-  height: 3px;
+  width: 85px;
+  height: 4px;
   border: none;
   background: #FFFFFF;
   border-radius: 5px;
 }
 
-.skillsFooter {
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 10px;
+.skills {
+  margin-top: 50px;
+}
+
+.experiences {
+  display: flex;
+  align-items: center;
+}
+
+.experiences .hrXp {
+  width: 74px;
+  height: 4px;
+  border: none;
+  background: #FFFFFF;
+  border-radius: 5px;
+}
+
+.btnHireMe {
+  font-size: 1rem;
+  font-weight: 500;
+  width: 200px;
+  height: 25px;
+  background: #FAFF00;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 1s, color 1s, height .5s;
+}
+
+.btnHireMe:hover {
+  border: 2px solid #FAFF00;
+  background-color: #000;
+  height: 30px;
+  color: #fff;
 }
 
 .alignRight {
   display: grid;
   grid-template-rows: 20vh 65vh 15vh;
 }
+
+.skillsFooter {
+  background: rgba(255, 255, 255, 0.9);
+  border-top-right-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.skillsFooter img {
+  width: 50px;
+  height: 50px;
+}
+
+.skillsFooter .imgAlternative {
+  width: 95px;
+  height: 50px;
+}
+
+
