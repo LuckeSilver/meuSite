@@ -96,15 +96,15 @@ ul {
   flex-direction: column;
   align-items: flex-end;
   cursor: pointer;
-  transition: 9s;
+  transition: background-color 1s;
 }
 
 .menuBurguer:hover > .burguer {
-  background: #FAFF00;
+  background-color: #FAFF00;
 }
 
 .menuBurguer:hover > .minorBurguer {
-  background: #FAFF00;
+  background-color: #FAFF00;
 }
 
 .burguer {
@@ -245,6 +245,12 @@ header{
 .skillsFooter img {
   width: 50px;
   height: 50px;
+  cursor: pointer;
+  transition: transform 1s;
+}
+
+.skillsFooter:hover img {
+  transform: scale(1.5);
 }
 
 .skillsFooter .imgAlternative {

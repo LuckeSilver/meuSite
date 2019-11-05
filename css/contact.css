@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("/images/Contact.png");
+  background-repeat: no-repeat;
+  background-color: #000;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mainMenu {
+  margin-right: 25px;
+}
+
+.montserratBold {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.montserratBlack {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+}
+
+.montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.portfolio {
+  font-size: 35px;
+}
+
+.liMenu {
+  font-size: 20px;
+  padding: 10px;
+}
+
+.liMenu .hrMenu {
+  width: 0px;
+  height: 4px;
+  border: none;
+
+  background: #FAFF00;
+  border-radius: 10px;
+  transition: width 1s;
+
+}
+
+.menuContact .hrMenu {
+  width: 80%;
+  height: 4px;
+  border: none;
+
+  background: #FAFF00;
+  border-radius: 10px;
+  transition: width 1s;
+}
+
+.liMenu:hover .hrMenu {
+  width: 80%;
+}
+
+.titMenu #hrPort {
+  width: 80%;
+  height: 4px;
+  border: none;
+
+  background: #FAFF00;
+  border-radius: 10px;
+  transition: width 1s;
+}
+
+.titMenu:hover #hrPort {
+  width: 100%;
+}
+
+.menuBurguer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  cursor: pointer;
+  transition: 9s;
+}
+
+.menuBurguer:hover > .burguer {
+  background: #FAFF00;
+}
+
+.menuBurguer:hover > .minorBurguer {
+  background: #FAFF00;
+}
+
+.burguer {
+  width: 52px;
+  height: 4px;
+  margin: 5px;
+
+  background: #000;
+  border-radius: 10px;
+  border: none;
+}
+
+.minorBurguer {
+  width: 39px;
+  height: 4px;
+  margin: 5px;
+
+  background: #000;
+  border-radius: 10px;
+  border: none;
+}
+
+.contactMe {
+  display: flex;
+  align-items: center;
+}
+
+.contactMe > hr {
+  width: 85px;
+  height: 4px;
+  border: none;
+  background: #FFFFFF;
+  border-radius: 5px;
+}
+
+.sayHello {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sayHello > h1 {
+
+  font-weight: 800;
+  font-size: 2.2rem;
+}
+
+.contactMe > h2 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #FAFF00;
+  margin-left: 5px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.containerForm {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario > input {
+  background: none;
+  border: none;
+  border-bottom: 2px solid white;
+  width: 300px;
+  margin-top: 15px;
+}
+
+.formulario > select {
+  font-family: 'Montserrat', sans-serif;
+  border: none;
+  background: none;
+  background-color: black;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 15px;
+  border-bottom: 2px solid white;
+}
+
+.formulario > textarea {
+  background: none;
+  border: none;
+  border-bottom: 2px solid white;
+  color: rgba(255, 255, 255, 0.6);
+  overflow: hidden;
+  resize: none;
+  margin-top: 15px;
+}
+
+.btnMessage {
+  margin-top: 15px;
+  padding: 5px;
+  border: none;
+  font-weight: 700;
+
+  background: #FAFF00;
+  border-radius: 5px;
+}
