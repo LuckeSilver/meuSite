@@ -3,6 +3,14 @@
   padding: 0;
 }
 
+input[type="checkbox"]{
+  display: none;
+}
+
+.itensCel {
+  visibility: hidden;
+}
+
 body {
   background: #000;
   color: #fff;
@@ -77,15 +85,15 @@ ul {
   flex-direction: column;
   align-items: flex-end;
   cursor: pointer;
-  transition: 9s;
+  transition: background-color 2s;
 }
 
 .menuBurguer:hover > .burguer {
-  background: #FAFF00;
+  background-color: #FAFF00;
 }
 
 .menuBurguer:hover > .minorBurguer {
-  background: #FAFF00;
+  background-color: #FAFF00;
 }
 
 .burguer {
@@ -372,73 +380,198 @@ background-position: 450px;
   }
 
   .rodape {
-    width: 700px;
-    height: 20.4vh;
+    width: 630px;
+    height: 25vh;
     margin-top: 130px;
-    margin-left: 180px
+    margin-left: 130px
   }
 
   .midias {
     margin-top: 10px;
-    font-size: 11px;
+    font-size: 10px;
   }
 
   .leftFooter > h3 {
     margin-bottom: 5px;
     margin-top: 25px;
-    font-size: 20px;
+    font-size: 15px;
   }
 
   .socialTxt {
-    font-size: 20px;
+    font-size: 15px;
     margin-top: 5px;
     margin-left: 20px;
   }
 
   .twitter {
     margin-bottom: 5px;
-    font-size: 20px;
+    font-size: 15px;
   }
 
   .rightP {
     font-family: 'Montserrat', sans-serif;
-    font-size: 13px;
+    font-size: 12px;
     text-align: left;
   }
 
   .leftFooter > p {
     font-family: 'Montserrat', sans-serif;
-    font-size: 13px;
+    font-size: 12px;
     text-align: left;
   }
 
   .leftAside {
     margin-top: 120px;
-    margin-left: 30px;
+    margin-left: 20px;
   }
 
   .leftAside > h1 {
-    margin-top: -86px;
-    font-size: 3rem;
+    margin-top: -66px;
+    font-size: 2.3rem;
   }
 
   .leftAside > h2 {
-    font-size: 1.6rem;
-  }
-
-  .btnContact {
-    width: 140px;
-    height: 30px;
     font-size: 1.2rem;
   }
 
+  .btnContact {
+    margin-left: 20px;
+    width: 120px;
+    height: 25px;
+    font-size: .9rem;
+  }
+
   .verticalRow {
-    height: 80px;
+    height: 60px;
   }
 
   body {
-    background-size: 190px;
-    background-position: 335px;
+    background-size: 170px;
+    background-position: 270px;
     background-position-y: 60px;
   }
+
+  .burguer {
+    width: 40px;
+    height: 4px;
+    margin: 5px;
+  
+    background: #FFFFFF;
+    border-radius: 10px;
+    border: none;
+  }
+  
+  .minorBurguer {
+    width: 27px;
+    height: 4px;
+    margin: 5px;
+  
+    background: #FFFFFF;
+    border-radius: 10px;
+    border: none;
+  }
 }
+
+@media (max-width: 970px) {
+  body {
+    background-image: url("/images/BodyGif.gif");
+
+    /* Center and scale the image nicely */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px;
+    overflow: hidden;
+  }
+
+  .rodape {
+    visibility: hidden;
+  }
+
+  .rightAside {
+    visibility: hidden;
+  }
+
+  .leftAside {
+    position: relative;
+    display: flex;
+    margin-top: -150px;
+    margin-left: 150px;
+    width: 500px;
+    align-items: center;
+  }
+
+  .leftAside > h1 {
+    margin-top: -112px;
+    font-size: 4rem;
+    margin-left: 55px;
+  }
+
+  .leftAside > h2 {
+    font-size: 2rem;
+  }
+
+  .btnContact {
+    margin-left: 20px;
+    width: 180px;
+    height: 30px;
+    font-size: 1rem;
+  }
+
+  .verticalRow {
+    height: 100px;
+    margin-right: 350px;
+  }
+
+  .mainMenu {
+    visibility: hidden;
+  }
+
+  .itensCel {
+    position: absolute;
+    visibility: visible;
+    width: 300px;
+    height: 100vh;
+    margin-top: -345px;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    left: -300px;
+    transition: all 1s;
+  }
+
+  .menuBurguer {
+    position: absolute;
+    align-items: flex-start;
+    margin-top: 0px;
+    top: 10px;
+    z-index: 2;
+  }
+
+  .montserratBold {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .montserratBold > h1 {
+    margin-top: 60px;
+  }
+
+  .liMenu {
+    padding: 10px 90px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+
+  .portfolio {
+    font-size: 1.5rem;
+  }
+
+
+
+  input[type="checkbox"]:checked ~ .itensCel {
+    transform: translateX(300px);
+    -moz-transform: translate(300px);
+    transition-delay: .5;
+  }
+}
+
+
