@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-input[type="checkbox"]{
+input[type="checkbox"] {
   display: none;
 }
 
@@ -29,17 +29,17 @@ ul {
 }
 
 .montserratBold {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
 
 .montserratBlack {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 800;
 }
 
 .montserrat {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .portfolio {
@@ -56,10 +56,9 @@ ul {
   height: 4px;
   border: none;
 
-  background: #FAFF00;
+  background: #faff00;
   border-radius: 10px;
   transition: width 1s;
-
 }
 
 .liMenu:hover .hrMenu {
@@ -71,7 +70,7 @@ ul {
   height: 4px;
   border: none;
 
-  background: #FAFF00;
+  background: #faff00;
   border-radius: 10px;
   transition: width 1s;
 }
@@ -81,6 +80,7 @@ ul {
 }
 
 .menuBurguer {
+  visibility: hidden;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -89,11 +89,11 @@ ul {
 }
 
 .menuBurguer:hover > .burguer {
-  background-color: #FAFF00;
+  background-color: #faff00;
 }
 
 .menuBurguer:hover > .minorBurguer {
-  background-color: #FAFF00;
+  background-color: #faff00;
 }
 
 .burguer {
@@ -101,7 +101,7 @@ ul {
   height: 4px;
   margin: 5px;
 
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 10px;
   border: none;
 }
@@ -111,7 +111,7 @@ ul {
   height: 4px;
   margin: 5px;
 
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 10px;
   border: none;
 }
@@ -135,37 +135,37 @@ ul {
   height: 100px;
   width: 4px;
   border-radius: 10px;
-  background: #FAFF00; 
+  background: #faff00;
 }
 
 .btnContact {
-width: 180px;
-height: 42px;
-background: #000;
-border-radius: 10px;
-color: #fff;
-border-color: #FAFF00;
-cursor: pointer;
+  width: 180px;
+  height: 42px;
+  background: #000;
+  border-radius: 10px;
+  color: #fff;
+  border-color: #faff00;
+  cursor: pointer;
 }
 
 .leftAside > h1 {
   margin-top: -110px;
   margin-left: 10px;
   position: relative;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 900;
   font-size: 4rem;
 }
 
 .leftAside > h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 2rem;
   margin-left: 10px;
 }
 
 .btnContact {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 1.5rem;
   margin-top: 10px;
@@ -173,20 +173,20 @@ cursor: pointer;
 }
 
 body {
-/* The image used */
-background-image: url("/images/lionFace.png");
+  /* The image used */
+  background-image: url("/images/lionFace.png");
 
-/* Center and scale the image nicely */
-background-position: center;
-background-repeat: no-repeat;
-background-attachment: fixed;
-background-size: 250px;
-background-position: 450px;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 250px;
+  background-position: 450px;
 }
 
 .rightAside {
   grid-area: "rightAside";
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -214,7 +214,7 @@ background-position: 450px;
   width: 60px;
   height: 4px;
 
-  background: #FAFF00;
+  background: #faff00;
   border-radius: 5px;
 }
 
@@ -279,12 +279,11 @@ background-position: 450px;
 }
 
 @media (max-width: 1100px) {
-
   .cabecalho {
     width: 100vw;
   }
 
-  .portfolio{
+  .portfolio {
     font-size: 25px;
   }
 
@@ -296,7 +295,7 @@ background-position: 450px;
     width: 700px;
     height: 20.4vh;
     margin-top: 130px;
-    margin-left: 180px
+    margin-left: 180px;
   }
 
   .midias {
@@ -322,13 +321,13 @@ background-position: 450px;
   }
 
   .rightP {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 13px;
     text-align: left;
   }
 
   .leftFooter > p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 13px;
     text-align: left;
   }
@@ -366,12 +365,11 @@ background-position: 450px;
 
 /*FALTA CONFIGURAR*/
 @media (max-width: 970px) {
-  
   .cabecalho {
     width: 100vw;
   }
 
-  .portfolio{
+  .portfolio {
     font-size: 25px;
   }
 
@@ -383,7 +381,7 @@ background-position: 450px;
     width: 630px;
     height: 25vh;
     margin-top: 130px;
-    margin-left: 130px
+    margin-left: 130px;
   }
 
   .midias {
@@ -409,13 +407,13 @@ background-position: 450px;
   }
 
   .rightP {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 12px;
     text-align: left;
   }
 
   .leftFooter > p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 12px;
     text-align: left;
   }
@@ -438,7 +436,7 @@ background-position: 450px;
     margin-left: 20px;
     width: 120px;
     height: 25px;
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
 
   .verticalRow {
@@ -455,18 +453,18 @@ background-position: 450px;
     width: 40px;
     height: 4px;
     margin: 5px;
-  
-    background: #FFFFFF;
+
+    background: #ffffff;
     border-radius: 10px;
     border: none;
   }
-  
+
   .minorBurguer {
     width: 27px;
     height: 4px;
     margin: 5px;
-  
-    background: #FFFFFF;
+
+    background: #ffffff;
     border-radius: 10px;
     border: none;
   }
@@ -539,6 +537,7 @@ background-position: 450px;
   }
 
   .menuBurguer {
+    visibility: visible;
     position: absolute;
     align-items: flex-start;
     margin-top: 0px;
@@ -565,13 +564,116 @@ background-position: 450px;
     font-size: 1.5rem;
   }
 
-
-
   input[type="checkbox"]:checked ~ .itensCel {
     transform: translateX(300px);
     -moz-transform: translate(300px);
-    transition-delay: .5;
+    transition-delay: 0.5;
   }
 }
 
+@media (max-width: 600px) { 
+
+    body {
+      background-image: url("/images/BodyGif.gif");
+  
+      /* Center and scale the image nicely */
+      background-repeat: no-repeat;
+      background-size: 900px;
+
+      background-position-y: 0px;
+      background-position-x: -230px;
+      width: 10px;
+      overflow: hidden;
+    }
+  
+    .rodape {
+      visibility: hidden;
+    }
+  
+    .rightAside {
+      visibility: hidden;
+    }
+  
+    .leftAside {
+      position: relative;
+      display: flex;
+      margin-left: -50px;
+      width: 500px;
+      align-items: center;
+    }
+  
+    .leftAside > h1 {
+      margin-top: 90px;
+      font-size: 3rem;
+      margin-left: 40px;
+    }
+  
+    .leftAside > h2 {
+      font-size: 1.5rem;
+    }
+  
+    .btnContact {
+      margin-left: 20px;
+      width: 160px;
+      height: 25px;
+      font-size: 1rem;
+    }
+  
+    .verticalRow {
+      position: absolute;
+      height: 75px;
+      left: 120px;
+      top: 100px;
+    }
+  
+    .mainMenu {
+      visibility: hidden;
+    }
+  
+    .itensCel {
+      position: absolute;
+      visibility: visible;
+      width: 300px;
+      height: 100vh;
+      margin-top: -345px;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 1;
+      left: -300px;
+      transition: all 1s;
+    }
+  
+    .menuBurguer {
+      visibility: visible;
+      position: absolute;
+      align-items: flex-start;
+      margin-top: 0px;
+      top: 10px;
+      z-index: 2;
+    }
+  
+    .montserratBold {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .montserratBold > h1 {
+      margin-top: 60px;
+    }
+  
+    .liMenu {
+      padding: 10px 90px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+  
+    .portfolio {
+      font-size: 1.5rem;
+    }
+  
+    input[type="checkbox"]:checked ~ .itensCel {
+      transform: translateX(300px);
+      -moz-transform: translate(300px);
+      transition-delay: 0.5;
+    }
+  }
 
