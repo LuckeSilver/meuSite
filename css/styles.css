@@ -688,15 +688,18 @@ body {
   }
 
   @media (max-width: 400px) { 
-
-    body {
+    body{
       background-image: url("/images/BodyGif.gif");
-  
+      
+      /* Center and scale the image nicely */
       background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-size: cover;
+      background-size: 600px;
+      
+      background-position-y: 0px;
+      background-position-x: -100px;
+      overflow: hidden;
     }
-  
+
     .rodape {
       visibility: hidden;
     }
@@ -708,33 +711,33 @@ body {
     .leftAside {
       position: relative;
       display: flex;
-      margin-left: 0;
-      width: 100vw;
+      width: 0;
       align-items: center;
     }
   
     .leftAside > h1 {
-      margin-top: 90px;
+      margin-top: 0px;
       font-size: 3rem;
-      margin-left: 40px;
+      margin-right: 500px;
     }
   
     .leftAside > h2 {
-      font-size: 1.5rem;
+      font-size: 2rem;
+      margin-right: 95px;
     }
   
     .btnContact {
-      margin-left: 20px;
-      width: 160px;
-      height: 25px;
+      width: 180px;
+      height: 30px;
       font-size: 1rem;
+      margin-right: 95px;
     }
   
     .verticalRow {
       position: absolute;
-      height: 75px;
-      left: 55px;
-      top: 100px;
+      height: 100px;
+      left: 80px;
+      top: 315px;
     }
   
     .mainMenu {
@@ -761,7 +764,14 @@ body {
       top: 10px;
       z-index: 2;
     }
-  
+
+    .burguer {
+      width: 60px;
+    }
+
+    .minorBurguer {
+      width: 45px;
+    }
     .montserratBold {
       display: flex;
       flex-direction: column;
@@ -787,5 +797,3 @@ body {
       transition-delay: 0.5;
     }
   }
-
-
