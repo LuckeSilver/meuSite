@@ -693,10 +693,7 @@ body {
       
       /* Center and scale the image nicely */
       background-repeat: no-repeat;
-      background-size: 600px;
-      
-      background-position-y: 0px;
-      background-position-x: -100px;
+      background-size: cover;
       overflow: hidden;
     }
 
@@ -709,35 +706,39 @@ body {
     }
   
     .leftAside {
-      position: relative;
+      position: absolute;
+      left: 300px;
+      bottom: -260px;
       display: flex;
-      width: 0;
+      width: 500px;
       align-items: center;
     }
   
     .leftAside > h1 {
       margin-top: 0px;
-      font-size: 3rem;
-      margin-right: 500px;
+      font-size: 5rem;
+      margin-left: -100px;
     }
   
     .leftAside > h2 {
-      font-size: 2rem;
-      margin-right: 95px;
+      font-size: 2.5rem;
+      margin-left: -160px;
     }
   
     .btnContact {
-      width: 180px;
-      height: 30px;
-      font-size: 1rem;
-      margin-right: 95px;
+      border-radius: 20px;
+      width: 200px;
+      height: 40px;
+      font-size: 1.5rem;
+      margin-left: -160px;
     }
   
     .verticalRow {
       position: absolute;
-      height: 100px;
-      left: 80px;
-      top: 315px;
+      height: 120px;
+      width: 5px;
+      left: -100px;
+      top: 20px;
     }
   
     .mainMenu {
@@ -747,13 +748,19 @@ body {
     .itensCel {
       position: absolute;
       visibility: visible;
-      width: 300px;
-      height: 100vh;
-      margin-top: -345px;
+      width: 400px;
+      height: 1500px;
+      margin-top: -355px;
       background: rgba(0, 0, 0, 0.7);
       z-index: 1;
-      left: -300px;
+      left: -400px;
       transition: all 1s;
+    }
+
+    .menuCel li {
+      font-size: 1.5rem;
+      margin-top: 50px;
+      padding: 20px 100px;
     }
   
     .menuBurguer {
@@ -766,11 +773,13 @@ body {
     }
 
     .burguer {
-      width: 60px;
+      width: 80px;
+      height: 8px;
     }
 
     .minorBurguer {
-      width: 45px;
+      width: 65px;
+      height: 8px;
     }
     .montserratBold {
       display: flex;
@@ -788,12 +797,12 @@ body {
     }
   
     .portfolio {
-      font-size: 1.5rem;
+      font-size: 2rem;
     }
   
     input[type="checkbox"]:checked ~ .itensCel {
-      transform: translateX(300px);
-      -moz-transform: translate(300px);
+      transform: translateX(400px);
+      -moz-transform: translate(400px);
       transition-delay: 0.5;
     }
   }
