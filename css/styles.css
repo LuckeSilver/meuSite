@@ -148,6 +148,10 @@ ul {
   cursor: pointer;
 }
 
+.btnContact > a {
+  padding: 5px 38px;
+}
+
 .leftAside > h1 {
   margin-top: -110px;
   margin-left: 10px;
@@ -578,11 +582,10 @@ body {
   
       /* Center and scale the image nicely */
       background-repeat: no-repeat;
-      background-size: 900px;
+      background-size: cover;
 
       background-position-y: 0px;
-      background-position-x: -230px;
-      width: 10px;
+      background-position-x: -280px;
       overflow: hidden;
     }
   
@@ -597,8 +600,116 @@ body {
     .leftAside {
       position: relative;
       display: flex;
-      margin-left: -50px;
-      width: 500px;
+      width: 600px;
+      align-items: center;
+    }
+  
+    .leftAside > h1 {
+      margin-top: 300px;
+      font-size: 4rem;
+      margin-right: 100px;
+    }
+  
+    .leftAside > h2 {
+      font-size: 2rem;
+      margin-right: 95px;
+    }
+  
+    .btnContact {
+      width: 180px;
+      height: 30px;
+      font-size: 1rem;
+      margin-right: 95px;
+    }
+  
+    .verticalRow {
+      position: absolute;
+      height: 100px;
+      left: 80px;
+      top: 315px;
+    }
+  
+    .mainMenu {
+      visibility: hidden;
+    }
+  
+    .itensCel {
+      position: absolute;
+      visibility: visible;
+      width: 300px;
+      height: 100vh;
+      margin-top: -345px;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 1;
+      left: -300px;
+      transition: all 1s;
+    }
+  
+    .menuBurguer {
+      visibility: visible;
+      position: absolute;
+      align-items: flex-start;
+      margin-top: 0px;
+      top: 10px;
+      z-index: 2;
+    }
+
+    .burguer {
+      width: 60px;
+    }
+
+    .minorBurguer {
+      width: 45px;
+    }
+    .montserratBold {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .montserratBold > h1 {
+      margin-top: 60px;
+    }
+  
+    .liMenu {
+      padding: 10px 90px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+  
+    .portfolio {
+      font-size: 1.5rem;
+    }
+  
+    input[type="checkbox"]:checked ~ .itensCel {
+      transform: translateX(300px);
+      -moz-transform: translate(300px);
+      transition-delay: 0.5;
+    }
+  }
+
+  @media (max-width: 400px) { 
+
+    body {
+      background-image: url("/images/BodyGif.gif");
+  
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+  
+    .rodape {
+      visibility: hidden;
+    }
+  
+    .rightAside {
+      visibility: hidden;
+    }
+  
+    .leftAside {
+      position: relative;
+      display: flex;
+      margin-left: 0;
+      width: 100vw;
       align-items: center;
     }
   
@@ -622,7 +733,7 @@ body {
     .verticalRow {
       position: absolute;
       height: 75px;
-      left: 120px;
+      left: 55px;
       top: 100px;
     }
   
@@ -676,4 +787,5 @@ body {
       transition-delay: 0.5;
     }
   }
+
 
