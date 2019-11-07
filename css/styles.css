@@ -690,11 +690,20 @@ body {
   @media (max-width: 400px) { 
     body{
       background-image: url("/images/BodyGif.gif");
-      
+      width: 100vw;
+      height: 100vh;
       /* Center and scale the image nicely */
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: contain;
       overflow: hidden;
+      background-position-x: 0px;
+      background-position-y: 0px;
+    }
+
+    .mainSection {
+      display: grid;
+      grid-template-columns: 1;
+      grid-template-areas: none;
     }
 
     .rodape {
@@ -704,40 +713,34 @@ body {
     .rightAside {
       visibility: hidden;
     }
-  
+
     .leftAside {
-      position: absolute;
-      left: 300px;
-      bottom: -260px;
+      grid-column: 1/2;
       display: flex;
-      width: 500px;
+      width: 200px;
       align-items: center;
     }
   
     .leftAside > h1 {
       margin-top: 0px;
-      font-size: 5rem;
-      margin-left: -100px;
+      font-size: 2rem;
     }
   
     .leftAside > h2 {
-      font-size: 2.5rem;
-      margin-left: -160px;
+      font-size: 1rem;
     }
-  
+
     .btnContact {
       border-radius: 20px;
-      width: 200px;
-      height: 40px;
-      font-size: 1.5rem;
-      margin-left: -160px;
+      width: 80px;
+      height: 20px;
+      font-size: .5rem;
     }
   
     .verticalRow {
       position: absolute;
       height: 120px;
       width: 5px;
-      left: -100px;
       top: 20px;
     }
   
@@ -748,12 +751,11 @@ body {
     .itensCel {
       position: absolute;
       visibility: visible;
-      width: 400px;
-      height: 1500px;
+      width: 200px;
       margin-top: -355px;
       background: rgba(0, 0, 0, 0.7);
       z-index: 1;
-      left: -400px;
+      left: -200px;
       transition: all 1s;
     }
 
@@ -773,13 +775,11 @@ body {
     }
 
     .burguer {
-      width: 80px;
-      height: 8px;
+      width: 60px;
     }
 
     .minorBurguer {
-      width: 65px;
-      height: 8px;
+      width: 45px;
     }
     .montserratBold {
       display: flex;
@@ -797,12 +797,12 @@ body {
     }
   
     .portfolio {
-      font-size: 2rem;
+      font-size: 1rem;
     }
   
     input[type="checkbox"]:checked ~ .itensCel {
-      transform: translateX(400px);
-      -moz-transform: translate(400px);
+      transform: translateX(200px);
+      -moz-transform: translate(200px);
       transition-delay: 0.5;
     }
   }
